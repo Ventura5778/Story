@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <script src="../jquery/jquery.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../jquery/jquery.js"></script>     
+          
+        <style>
+            html, body{
+                background: url(../img/img_bg.svg);
+            }
+            .nombre{
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+            #btn-test{
+                opacity: ;
+            }
+            #img:hover{
+                width: 160px;
+                height: 160px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse">
+                    <span class="sr-only">Desplegar Navegacion</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="../index.html" class="navbar-bran" type="button"><img src="../img/img_01.svg" alt="" style="margin-left: 30px;">inicio</a>
+            </div>
+        </nav>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <section class="container" style="margin-top: 100px;">
+            <div class="row col-sm-12">                
+                <div class="col-sm-4" align="center">
+                    <a href="#" id="hover-a" type="button" data-target="#myHidalgo" data-toggle="modal">
+                        <img id="img" src="../img/img_user.svg" alt="Hidalho" width="150" height="150">
+                    </a>
+                    <div class="panel-body">
+                        <h3 class="nombre" style="color: #000;">Miguél Hidalgo</h3>
+                    </div>
+                </div>
+                <div class="col-sm-4" align="center">
+                    <a href="#" type="button" data-target="#myMorelos" data-toggle="modal">
+                        <img id="img" src="../img/img_user.svg" alt="Morelos" width="150" height="150">
+                    </a>
+                    <div class="panel-body">
+                        <h3 class="nombre" style="color:#000;">José M. Morelo</h3>
+                    </div>
+                </div> 
+                <div class="col-sm-4" align="center">
+                    <a href="#" type="button" data-target="#myAllende" data-toggle="modal">
+                        <img id="img" src="../img/img_user.svg" alt="Allente" width="150" height="150">
+                    </a>
+                    <div class="panel-body">
+                        <h3 class="nombre" style="color:#000;">Ignacio Allende</h3>
+                    </div>
+                </div>               
+            </div>
+            <!--Start Modal 01-->
+            <div class="modal fade" id="myHidalgo" labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" style="margin-top: 100px;">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" arial-label="close">
+                                <span arial-idden="true">&times;</span>
+                            </button>
+                            <br>
+                            <strong><h4>Miglél Hidalgo y Costilla</h4></strong>
+                        </div>
+                        <div class="modal-body">
+                            <center>
+                                <strong>Mayo 8 de 1751 <br>Natalicio de Miguel Hidalgo y Costilla</strong>
+                            </center>
+                            <hr>              
+                            <p style="text-align: justify;">Sus padres fueron Cristóbal Hidalgo y Costilla y Ana María Gallaga. A los 17 años se convirtió en maestro de Filosofía y Teología. En 1778 se ordenó Sacerdote.</p>
+                            <p style="text-align: justify;">En la madrugada del 16 de setiembre de 1810, lanzó el famoso "Grito de Dolores" arengando al pueblo a tomar las armas y luchar contra los españoles que apoyaban al José Bonaparte como nuevo rey de España.</p>
+                            <p style="text-align: justify;">El cura Hidalgo lideró un ejército patriota y organizó un gobierno en Guadalajara. Aquí decretó la abolición de la esclavitud y derogó los tributos indígenas. Pero los realistas  recuperaron posiciones y lo derrotaron en la batalla de Puente de Calderón (17 de enero de 1811). Hidalgo intentó escapar a Estados Unidos, pero fue capturado. Murió fusilado en Chihuahua el 30 de julio de 1811.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group">
+                                <button type="button" class="close btn-left" data-dismiss="modal" arial-label="close">Crerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Finish Modal-->
+            <!--Start Modal 02-->
+            <div class="modal fade" id="myMorelos" labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" style="margin-top: 100px;">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" arial-label="close">
+                                <span arial-idden="true">&times;</span>
+                            </button>
+                            <br>
+                            <strong><h4>José María Morelo y Pavón</h4></strong>
+                        </div>
+                        <div class="modal-body">              
+                            <center>
+                                <strong>Septiembre 30 de 1765<br>Natalicio de José María Morelos y Pavon</strong>
+                            </center>
+                            <hr>
+                            <p style="text-align: justify;">Sus padres fueron José Manuel Morelos y Juana Pérez-Pavón.</p>
+                            <p style="text-align: justify;">Estudió en el Seminario de Valladolid y se graduó en Artes en la Real y Pontificia Universidad de México. Desde 1798 fue cura de varios pueblos de Michoacán. </p>
+                            <p style="text-align: justify;">En 1810 se incorporó a las filas de Miguel Hidalgo, quien lo nombró jefe de los insurgentes del sur de México, y le encargó tomar Acapulco. Después de la muerte de Hidalgo (1811), Morelos conquistó la mayor parte del sur y centro del país. En 1812, tomó Oaxaca.</p>
+                            <p style="text-align: justify;">También organizó el Congreso de Anáhuac, que aprobó la Constitución Liberal de Apatzingán en 1814. Sin embargo, los criollos le negaron ayuda, y apoyaron la restauración absolutista del rey Fernando VII y la sanguinaria represión del virrey Félix María Calleja. Tras varios reveses militares, Morelos fue capturado en noviembre de 1815. Fue condenado por herejía y traición. Murió fusilado el 22 de diciembre de 1815.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group">
+                                <button type="button" class="close btn-left" data-dismiss="modal" arial-label="close">Crerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Finish Modal-->
+            <!--Start Modal 03-->
+            <div class="modal fade" id="myAllende" labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content" style="margin-top: 100px;">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" arial-label="close">
+                                <span arial-idden="true">&times;</span>
+                            </button>
+                            <br>
+                            <strong><h4>Ignacio Allende y Unzaga</h4></strong>
+                        </div>
+                        <div class="modal-body">              
+                            <center>
+                                <strong>Enero 21 de 1769 <br>Natalicio de Ignacio Allende</strong>
+                            </center>
+                            <hr>
+                            <p style="text-align: justify;">Sus padres fueron Domingo Allende y María Ana de Unzaga. Siguió la carrera militar y sirvió en un regimiento de caballería.</p>
+                            <p style="text-align: justify;">Desde 1808 se vinculó a los conspiradores de Querétaro. El 16 de setiembre de 1810 estalló el movimiento emancipador, liderado por el cura Miguel Hidalgo. Allende fue nombrado Capitán General y asistió a toma de la Alhóndiga de Granaditas. Después de la victoria en Monte de las Cruces propuso la toma de Ciudad de México, pero el cura Hidalgo ordenó el repligue. Después de la derrota en Puente de Calderón, Hidalgo fue destituido y Allende asumió el mando del ejército patriota.</p>
+                            <p style="text-align: justify;">Cuando intentaba reorganizar sus fuerzas, Allende fue capturado en Acatita de Baján. Los realistas lo llevaron a Chihuahua, donde lo fusilaron el 26 de junio de 1811.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="form-group">
+                                <button type="button" class="close btn-left" data-dismiss="modal" arial-label="close">Crerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Finish Modal-->
+            <div class="row col-sm-12" style="margin-top: 6%;">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6" align="center" >
+                    <a href="mod_uno_a.html" type="button" id="btn-test" class="btn btn-block btn-primary">      
+                        <strong>
+                           <p style="font-size: 25px;">TEST</p>
+                        </strong>
+                    </a>
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </section>
+        <br>
+    </body>
+</html>
