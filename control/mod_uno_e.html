@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STORY</title> <link rel="SHORTCUT ICON" type="SVG" href="../img/img_01.svg">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <script type="text/javascript" src="../jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#r_true").click(function(event){
+                event.preventDefault();
+                var x = document.getElementById("res_dos");
+                x.play();
+                var mensaje = "<div class='alert alert-warning' id='font-res' align='center'><strong>Incorrecto   </strong><img src='../img/img_false.svg' alt=''><p>Allende fue Fusilado el 26 de Junio de 1811.</p></div>"
+                $("#resultado").html(mensaje);
+                $("#resultado").append('<a href="mod_uno_f.html" type="button" class="btn btn-block btn-default btn-lg">Siguiente</a>');
+            });
+
+            $("#r_false").click(function(event){
+                event.preventDefault();
+                var x = document.getElementById("res_uno");
+                x.play();
+               var mensaje = "<div class='alert alert-success' id='font-res' align='center'><strong>Correcto   </strong><img src='../img/img_true.svg' alt=''><p>Allende <strong>NO</strong> Fue fusilado en esa Fecha.</p></div>"
+                $("#resultado").html(mensaje);
+                $("#resultado").append('<a href="mod_uno_f.html" type="button" class="btn btn-block btn-default btn-lg">Siguiente</a>');
+            });
+        });
+    </script>
+    <style type="text/css">
+        body{
+            background: url(../img/img_bg.svg);
+        }
+        #font-res{
+            font-size: 19px;
+            align: center;
+        }
+        .font-pregunta{
+            font-family: cursive;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="navbar-ex1-collapse">
+                <span class="sr-only">Desplegar Navegacion</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="mod_uno.html" class="navbar-bran" type="button">
+                <img src="../img/img_01.svg" alt="" style="margin-left: 30px;">inicio
+            </a>
+        </div>
+    </nav>
+    <section class="container" style="margin-top: 140px;">
+        <div class="row col-sm-12">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">                
+                   <h4>
+                    <strong>
+                        <p class="font-pregunta" style="text-align: justify;">Ignacio Allende Murió fusilado en Chihuahua el 30 de julio de 1811...</p>
+                    </strong>
+                    </h4>                
+                <hr>
+                <audio id="res_uno">                   
+                    <source src="audio/correct-ding.wav">                    
+                </audio>
+                <audio id="res_dos">                   
+                    <source src="audio/bambu_1.wav">                    
+                </audio>
+                <div id="resultado">
+                    <div class="form-group">
+                        <a href="#" type="button" id="r_true" class="btn btn-block btn-default btn-lg">Verdadero</a>
+                    </div>
+                    <div class="form-group">
+                        <a href="#" type="button" id="r_false" class="btn btn-block btn-default btn-lg">Falso</a>
+                    </div>
+                </div> 
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </section>
+</body>
+</html>
